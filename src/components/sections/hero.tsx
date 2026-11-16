@@ -6,8 +6,8 @@ export function Hero({ t }: { t: Dictionary }) {
   return (
     <section className="hero-stage relative flex min-h-[100svh] flex-col overflow-hidden bg-ink text-ivory">
       <HeroField />
-      <div className="shell relative z-10 flex min-h-[100svh] flex-col pb-8 pt-28 max-lg:pt-[40vh] lg:pt-32">
-        <div className="flex flex-1 flex-col justify-end">
+      <div className="shell relative z-10 flex min-h-[100svh] flex-col pb-8 pt-28 max-lg:pt-[26vh] lg:pt-32">
+        <div className="flex flex-1 flex-col justify-end max-lg:justify-start">
           <div className="lg:max-w-[46rem]">
             <p className="kicker text-ivory/70">{t.hero.eyebrow}</p>
             <h1 className="display hero-type mt-5">
