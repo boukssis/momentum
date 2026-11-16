@@ -33,16 +33,16 @@ export default async function AboutPage() {
             ))}
           </div>
         </div>
-        <div className="shell border-t border-ink/10 py-12">
-          <p className="kicker text-quiet">{t.aboutPage.factsTitle}</p>
-          <dl className="mt-8 grid gap-8 md:grid-cols-3">
-            {t.aboutPage.facts.map((fact) => (
-              <div key={fact.label} className="border-t border-ink pt-4">
-                <dt className="kicker text-quiet">{fact.label}</dt>
-                <dd className="display mt-3 text-4xl">{fact.value}</dd>
-              </div>
+        <div className="shell border-t border-ink/10 py-16 md:py-20">
+          <p className="kicker text-quiet">{t.aboutPage.positionTitle}</p>
+          <ul className="mt-10 grid gap-12 lg:grid-cols-3">
+            {t.aboutPage.positions.map((item) => (
+              <li key={item.title} className="border-t border-ink pt-5">
+                <h3 className="display text-[clamp(1.7rem,2vw,2.2rem)] leading-none">{item.title}</h3>
+                <p className="mt-4 text-lg leading-relaxed text-ink/75">{item.text}</p>
+              </li>
             ))}
-          </dl>
+          </ul>
         </div>
         <div className="shell py-16">
           <p className="kicker text-quiet">{t.aboutPage.disciplinesTitle}</p>

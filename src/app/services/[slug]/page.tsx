@@ -60,7 +60,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                 <Image src={service.image} alt={copy.imageAlt} fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" priority />
               </div>
             </div>
-            <p className="mt-3 text-sm text-quiet">{t.servicePage.illustrative}</p>
           </div>
         </div>
 
@@ -71,6 +70,8 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             </div>
           </div>
         ) : null}
+
+        <p className="shell pb-2 text-sm text-quiet">{t.servicePage.illustrative}</p>
 
         <div className="shell grid gap-14 py-12 md:py-20 lg:grid-cols-12">
           <div className="lg:col-span-7">

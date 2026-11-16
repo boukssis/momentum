@@ -34,7 +34,6 @@ export default async function ServicesPage() {
                       <Image src={service.image} alt={copy.imageAlt} fill sizes="(min-width: 1024px) 46vw, 100vw" className="object-cover" />
                     </div>
                   </div>
-                  <p className="mt-3 text-sm text-quiet">{t.servicePage.illustrative}</p>
                 </div>
                 <div className={flipped ? "lg:order-1" : ""}>
                   <p className="display text-5xl">{service.index}</p>
@@ -51,6 +50,7 @@ export default async function ServicesPage() {
             </article>
           );
         })}
+        <p className="shell pb-12 text-sm text-quiet">{t.servicePage.illustrative}</p>
       </div>
       <EndCta title={t.servicesPage.end} cta={t.closing.cta} />
     </>

@@ -129,9 +129,9 @@ export function SiteHeader({ locale, t }: { locale: Locale; t: Dictionary }) {
             })}
           </nav>
           <LanguageSwitch locale={locale} label={t.a11y.language} />
-          <Button href="/contact" className="hidden lg:inline-flex">
-            {t.nav.talk}
-          </Button>
+          <div className="hidden lg:block">
+            <Button href="/contact">{t.nav.talk}</Button>
+          </div>
           <button
             ref={menuRef}
             type="button"

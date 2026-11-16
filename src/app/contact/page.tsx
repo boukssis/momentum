@@ -27,7 +27,6 @@ export default async function ContactPage() {
         <p className="kicker text-orange">{t.contact.eyebrow}</p>
         <h1 className="display tight mt-6 max-w-xl text-[clamp(3rem,6vw,5.4rem)] leading-[0.94]">{t.contact.title}</h1>
         <p className="mt-6 max-w-md text-lg leading-relaxed text-ivory/78">{t.contact.intro}</p>
-        <p className="mt-6 max-w-md text-sm leading-relaxed text-ivory/75">{t.contact.honest}</p>
         <div className="mt-12">
           <p className="kicker text-ivory/70">{t.contact.address}</p>
           <address className="mt-3 text-lg not-italic leading-relaxed">

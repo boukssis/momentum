@@ -20,7 +20,7 @@ export function Leadership({ t, locale }: { t: Dictionary; locale: Locale }) {
                     alt={copy.photoAlt}
                     width={400}
                     height={400}
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover object-[center_18%]"
                     sizes="(min-width: 1024px) 420px, 90vw"
                   />
                 </ImageReveal>
@@ -41,7 +41,6 @@ export function Leadership({ t, locale }: { t: Dictionary; locale: Locale }) {
               <span className="mt-1 block font-normal text-quiet">{founderRole(locale)}</span>
             </p>
             <p className="mt-6 text-lg leading-relaxed text-ink/80">{copy.bio}</p>
-            <p className="mt-5 text-sm leading-relaxed text-quiet">{copy.careerNote}</p>
             <div className="mt-8">
               <Button href={company.founder.linkedin} variant="ink" newTabLabel={t.a11y.newTab}>
                 {copy.connect}

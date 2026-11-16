@@ -49,10 +49,12 @@ export function ServicesIndex({
                   className="group grid grid-cols-[4.5rem_1fr_auto] items-center gap-4 py-8"
                 >
                   <span className="display text-xl text-orange">{item.index}</span>
-                  <span className={`display text-[clamp(2rem,3vw,3.3rem)] leading-none transition-transform duration-500 ${on ? "text-ivory" : "text-ivory/55"} group-hover:translate-x-2 rtl:group-hover:-translate-x-2`}>
+                  <span className={`display text-[clamp(2rem,3vw,3.3rem)] leading-none transition-transform duration-300 ${on ? "translate-x-2 text-ivory rtl:-translate-x-2" : "text-ivory/55"}`}>
                     {item.title}
                   </span>
-                  <Arrow />
+                  <span className={on ? "text-orange" : "text-ivory/70"}>
+                    <Arrow />
+                  </span>
                 </Link>
               </li>
             );
@@ -65,19 +67,19 @@ export function ServicesIndex({
                 <motion.div
                   key={current.slug}
                   className="absolute inset-0"
-                  initial={reduce ? false : { opacity: 0, x: 28 * direction }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={reduce ? undefined : { opacity: 0, x: -18 * direction }}
-                  transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+                  initial={reduce ? false : { opacity: 0, x: 24 * direction, scale: 1.05 }}
+                  animate={{ opacity: 1, x: 0, scale: 1 }}
+                  exit={reduce ? undefined : { opacity: 0, x: -16 * direction }}
+                  transition={{ duration: 0.38, ease: [0.22, 1, 0.36, 1] }}
                 >
                   <Image src={current.image} alt={current.imageAlt} fill sizes="40vw" className="object-cover" />
                 </motion.div>
               </AnimatePresence>
             </div>
             <p className="mt-5 max-w-md text-lg leading-relaxed text-ivory/80">{current.summary}</p>
-            <p className="mt-3 text-sm text-ivory/70">{caption}</p>
           </div>
         </div>
+        <p className="col-span-12 mt-8 text-sm text-ivory/70">{caption}</p>
       </div>
 
       <div className="flex flex-col gap-12 lg:hidden">

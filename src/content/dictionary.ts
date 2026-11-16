@@ -58,7 +58,7 @@ const en = {
     title: ["Four disciplines.", "One direction."],
     intro: "Everything we do starts with understanding what matters — and making it matter to others.",
     all: "All disciplines",
-    illustrative: "Illustrative photography. Not a Momentum project.",
+    illustrative: "Illustrative photography.",
   },
   diff: {
     index: "03",
@@ -94,15 +94,13 @@ const en = {
     title: "Experience that moves business forward.",
     bio: "With a career spanning telecommunications, digital platforms, commercial growth, and business operations, Salem Alsanea brings an execution-focused perspective to Momentum. His leadership experience across Snoonu, Jahez Kuwait, Ooredoo Kuwait, and Zain Kuwait informs a business approach rooted in strategy, customer understanding, and measurable progress.",
     connect: "Connect with Salem",
-    careerNote:
-      "Snoonu, Jahez Kuwait, Ooredoo Kuwait, and Zain Kuwait are part of Salem’s career. They are not Momentum clients.",
     photoAlt: "Portrait of Salem Alsanea, Co-Founder and CEO of Momentum.",
   },
   approach: {
     index: "05",
     label: "How the work moves",
     title: ["From understanding", "to impact."],
-    note: "This sequence describes how Momentum approaches an engagement on this website. It is a working frame, not an independently certified methodology.",
+    note: "Five steps, kept in order: understand what is at stake, choose a direction, make the work, put it into the world, and learn from what happens.",
     stages: [
       {
         index: "01",
@@ -135,8 +133,7 @@ const en = {
     index: "06",
     label: "Ideas & insights",
     title: "A point of view, written plainly.",
-    intro:
-      "Three perspectives drawn from how Momentum talks about brands, marketing, and the problem underneath a brief. Public company updates live on LinkedIn.",
+    intro: "Three notes on brands, marketing, and the problem underneath a brief. Company updates are on LinkedIn.",
     read: "Read the perspective",
     linkedin: "Momentum on LinkedIn",
   },
@@ -165,7 +162,7 @@ const en = {
     capabilities: "Capabilities",
     thinking: "How we hold the work",
     related: "The other disciplines",
-    illustrative: "Illustrative photography. Not a client project, and not presented as Momentum’s work.",
+    illustrative: "Illustrative photography.",
     end: "Tell us what needs to move.",
   },
   aboutPage: {
@@ -177,11 +174,20 @@ const en = {
       "Momentum does not believe in creativity without purpose, marketing without direction, or business recommendations without execution. The company was built to hold those three in one practice.",
       "That means we can sit with a commercial question and stay through the thing the market actually sees: a brand, a campaign, a room, a plan people can run. The value is not a thicker deck. It is a clearer direction, carried all the way out.",
     ],
-    factsTitle: "The facts",
-    facts: [
-      { label: "Founded", value: "2026" },
-      { label: "Base", value: "Salmiya, Kuwait" },
-      { label: "Disciplines", value: "Four" },
+    positionTitle: "How the practice is held",
+    positions: [
+      {
+        title: "One room",
+        text: "Strategy, creativity, and execution stay together until the work is in the world. They are not handed between separate vendors.",
+      },
+      {
+        title: "Chosen for the problem",
+        text: "Events, marketing, consultancy, and branding are four ways in. The mix follows the problem, not a fixed package.",
+      },
+      {
+        title: "Salmiya, 2026",
+        text: "An independent company, close enough to the market it serves to stay specific.",
+      },
     ],
     disciplinesTitle: "What the practice holds",
     end: "The introduction is the work, not a brochure.",
@@ -189,10 +195,9 @@ const en = {
   insightsPage: {
     eyebrow: "Insights",
     title: ["Perspectives,", "not press releases."],
-    intro:
-      "These essays are written for this site from Momentum’s public point of view. They are not dated as articles, and they are not case studies. For the company’s own updates, use LinkedIn.",
+    intro: "Notes on brands, marketing, and the problem underneath a brief. They follow Momentum’s public point of view. Company updates are on LinkedIn.",
     read: "Read the perspective",
-    byline: "A perspective from Momentum",
+    byline: "From Momentum",
     related: "Continue",
     linkedin: "Follow the company on LinkedIn",
     end: "If the question is yours, the conversation can start.",
@@ -200,9 +205,7 @@ const en = {
   contact: {
     eyebrow: "Contact",
     title: "Start a conversation.",
-    intro: "Have a business challenge, a brand to build, or an experience worth creating? Write it down, or reach Momentum directly on LinkedIn.",
-    honest:
-      "If email delivery is connected, your note is sent to Momentum. If it is not, this page will say so. A message is never marked as sent unless it was.",
+    intro: "Have a business challenge, a brand to build, or an experience worth creating? Write it here, or reach Momentum on LinkedIn.",
     address: "Studio",
     linkedin: "Momentum on LinkedIn",
     founder: "Salem on LinkedIn",
@@ -223,11 +226,10 @@ const en = {
       long: "Please shorten this slightly.",
     },
     status: {
-      sent: "Sent. Your note was delivered to Momentum by email.",
-      notConfigured:
-        "Not sent. Email delivery is not connected on this site, so the note was not delivered. Momentum’s LinkedIn page is the direct public route.",
-      failed: "Not sent. The mail service did not accept the note. Try again, or use LinkedIn.",
-      invalid: "Check the fields below and try again. Nothing was sent.",
+      sent: "Sent. Momentum has your note.",
+      notConfigured: "This form can’t deliver the note right now. LinkedIn is the direct way to reach Momentum.",
+      failed: "That didn’t go through. Try again, or reach Momentum on LinkedIn.",
+      invalid: "Please check the fields below.",
     },
     linkedinCta: "Continue on LinkedIn",
   },
@@ -288,7 +290,7 @@ const ar: Widen<typeof en> = {
     title: ["أربعة تخصصات.", "اتجاه واحد."],
     intro: "كل ما نقوم به يبدأ بفهم ما يهم — ثم جعله يهم الآخرين.",
     all: "كل التخصصات",
-    illustrative: "صورة توضيحية. ليست مشروعاً لـ Momentum.",
+    illustrative: "تصوير توضيحي.",
   },
   diff: {
     index: "03",
@@ -324,14 +326,13 @@ const ar: Widen<typeof en> = {
     title: "خبرة تدفع الأعمال إلى الأمام.",
     bio: "بمسيرة تمتد عبر الاتصالات والمنصات الرقمية والنمو التجاري وعمليات الأعمال، يقدّم سالم الصانع إلى Momentum نظرة مبنية على التنفيذ. خبرته القيادية في سنونو وجاهز الكويت وأوريدو الكويت وزين الكويت تغذّي مقاربة تقوم على الاستراتيجية وفهم العميل والتقدم القابل للقياس.",
     connect: "تواصل مع سالم",
-    careerNote: "سنونو، وجاهز الكويت، وأوريدو الكويت، وزين الكويت جزء من مسيرة سالم المهنية. ليست عملاء لـ Momentum.",
     photoAlt: "صورة سالم الصانع، الشريك المؤسس والرئيس التنفيذي لـ Momentum.",
   },
   approach: {
     index: "05",
     label: "كيف يتحرك العمل",
     title: ["من الفهم", "إلى الأثر."],
-    note: "يصف هذا التسلسل أسلوب Momentum في التعامل مع العمل كما هو معروض على هذا الموقع. هو إطار عملي، لا منهجية معتمدة بشكل مستقل.",
+    note: "خمس خطوات بترتيبها: فهم ما هو على المحك، اختيار الاتجاه، صنع العمل، إخراجه إلى العالم، ثم التعلم مما يحدث.",
     stages: [
       {
         index: "01",
@@ -364,8 +365,7 @@ const ar: Widen<typeof en> = {
     index: "06",
     label: "أفكار ورؤى",
     title: "وجهة نظر، مكتوبة بوضوح.",
-    intro:
-      "ثلاث رؤى مأخوذة من طريقة Momentum في الحديث عن العلامات والتسويق والمشكلة التي تحت الطلب. تحديثات الشركة العامة على لينكدإن.",
+    intro: "ثلاث ملاحظات عن العلامات والتسويق والمشكلة التي تحت الطلب. تحديثات الشركة على لينكدإن.",
     read: "اقرأ الرؤية",
     linkedin: "Momentum على لينكدإن",
   },
@@ -394,7 +394,7 @@ const ar: Widen<typeof en> = {
     capabilities: "القدرات",
     thinking: "كيف نُمسك بالعمل",
     related: "التخصصات الأخرى",
-    illustrative: "صورة توضيحية. ليست مشروع عميل، ولا تُعرض بوصفها عملاً من Momentum.",
+    illustrative: "تصوير توضيحي.",
     end: "أخبرونا بما يحتاج أن يتحرك.",
   },
   aboutPage: {
@@ -406,11 +406,20 @@ const ar: Widen<typeof en> = {
       "لا تؤمن Momentum بإبداع بلا غاية، ولا بتسويق بلا اتجاه، ولا بتوصيات تجارية بلا تنفيذ. بُنيت الشركة لتمسك بالثلاثة في ممارسة واحدة.",
       "هذا يعني أننا نستطيع الجلوس مع السؤال التجاري والبقاء حتى الشيء الذي يراه السوق فعلاً: علامة، أو حملة، أو قاعة، أو خطة يمكن تشغيلها. القيمة ليست ملفاً أثخن. القيمة اتجاه أوضح، يُحمل حتى النهاية.",
     ],
-    factsTitle: "الوقائع",
-    facts: [
-      { label: "التأسيس", value: "2026" },
-      { label: "المقر", value: "السالمية، الكويت" },
-      { label: "التخصصات", value: "أربعة" },
+    positionTitle: "كيف تُمسك الممارسة",
+    positions: [
+      {
+        title: "غرفة واحدة",
+        text: "الاستراتيجية والإبداع والتنفيذ يبقون معاً حتى يصبح العمل في العالم. لا يُمرَّرون بين جهات متفرقة.",
+      },
+      {
+        title: "بحسب المشكلة",
+        text: "الفعاليات والتسويق والاستشارات والعلامة أربعة مداخل. المزيج يتبع المشكلة، لا باقة ثابتة.",
+      },
+      {
+        title: "السالمية، 2026",
+        text: "شركة مستقلة، قريبة من السوق الذي تخدمه بما يكفي لتبقى محددة.",
+      },
     ],
     disciplinesTitle: "ما تحمله الممارسة",
     end: "التعارف هو بداية العمل، لا كتيّب.",
@@ -418,10 +427,9 @@ const ar: Widen<typeof en> = {
   insightsPage: {
     eyebrow: "رؤى",
     title: ["رؤى،", "لا بيانات صحفية."],
-    intro:
-      "كُتبت هذه النصوص لهذا الموقع من وجهة نظر Momentum المعلنة. ليست مقالات مؤرخة، وليست دراسات حالة. لتحديثات الشركة نفسها، لينكدإن هو المكان.",
+    intro: "ملاحظات عن العلامات والتسويق والمشكلة التي تحت الطلب. تتبع وجهة نظر Momentum المعلنة. تحديثات الشركة على لينكدإن.",
     read: "اقرأ الرؤية",
-    byline: "رؤية من Momentum",
+    byline: "من Momentum",
     related: "متابعة",
     linkedin: "تابعوا الشركة على لينكدإن",
     end: "إذا كان السؤال سؤالكم، يمكن للحوار أن يبدأ.",
@@ -429,9 +437,7 @@ const ar: Widen<typeof en> = {
   contact: {
     eyebrow: "تواصل",
     title: "ابدأ الحوار.",
-    intro: "تحدٍّ في العمل، أو علامة تُبنى، أو تجربة تستحق أن تُصنع؟ اكتبوها، أو تواصلوا مع Momentum مباشرة عبر لينكدإن.",
-    honest:
-      "إذا كان توصيل البريد مفعّلاً، تُرسل ملاحظتكم إلى Momentum. وإذا لم يكن، ستقول هذه الصفحة ذلك. لا تُعلَّم أي رسالة بأنها أُرسلت إلا إذا أُرسلت فعلاً.",
+    intro: "تحدٍّ في العمل، أو علامة تُبنى، أو تجربة تستحق أن تُصنع؟ اكتبوها هنا، أو تواصلوا مع Momentum عبر لينكدإن.",
     address: "المكتب",
     linkedin: "Momentum على لينكدإن",
     founder: "سالم على لينكدإن",
@@ -452,11 +458,10 @@ const ar: Widen<typeof en> = {
       long: "اختصروا النص قليلاً.",
     },
     status: {
-      sent: "أُرسلت. وصلت ملاحظتكم إلى Momentum بالبريد.",
-      notConfigured:
-        "لم تُرسل. توصيل البريد غير مفعّل على هذا الموقع، لذا لم تُسلَّم الملاحظة. صفحة لينكدإن الخاصة بـ Momentum هي الطريق العام المباشر.",
-      failed: "لم تُرسل. لم تقبل خدمة البريد الملاحظة. أعيدوا المحاولة، أو استخدموا لينكدإن.",
-      invalid: "راجعوا الحقول أدناه وأعيدوا المحاولة. لم يُرسل شيء.",
+      sent: "أُرسلت. وصلت ملاحظتكم إلى Momentum.",
+      notConfigured: "لا يستطيع النموذج إيصال الملاحظة الآن. لينكدإن هو الطريق المباشر إلى Momentum.",
+      failed: "لم تصل الملاحظة. أعيدوا المحاولة، أو تواصلوا مع Momentum عبر لينكدإن.",
+      invalid: "راجعوا الحقول أدناه.",
     },
     linkedinCta: "المتابعة على لينكدإن",
   },
