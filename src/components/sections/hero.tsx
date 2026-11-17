@@ -1,5 +1,6 @@
 import { Button } from "@/components/button";
 import { HeroField } from "@/components/sections/hero-field";
+import { HeroSlogan } from "@/components/sections/hero-slogan";
 import type { Dictionary } from "@/content/dictionary";
 
 export function Hero({ t }: { t: Dictionary }) {
@@ -8,26 +9,9 @@ export function Hero({ t }: { t: Dictionary }) {
       <HeroField />
       <div className="shell relative z-10 flex min-h-[100svh] flex-col pb-8 pt-28 max-lg:pt-[26vh] lg:pt-32">
         <div className="flex flex-1 flex-col justify-end max-lg:justify-start">
-          <div className="lg:max-w-[46rem]">
+          <div>
             <p className="kicker text-ivory/70">{t.hero.eyebrow}</p>
-            <h1 className="display hero-type mt-5">
-              {t.hero.lines.map((line, index) => {
-                const last = index === t.hero.lines.length - 1;
-                return (
-                  <span key={line} className="line-mask" style={{ marginInlineStart: `${index * 0.06}em` }}>
-                    <span className="line-rise" style={{ animationDelay: `${0.28 + index * 0.12}s` }}>
-                      {line}
-                      {last ? (
-                        <span className="hero-bars" aria-hidden>
-                          <i />
-                          <i />
-                        </span>
-                      ) : null}
-                    </span>
-                  </span>
-                );
-              })}
-            </h1>
+            <HeroSlogan lines={t.hero.lines} />
             <p className="mt-8 max-w-md text-lg leading-relaxed text-ivory/85 md:text-xl">{t.hero.support}</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button href="/contact">{t.hero.primary}</Button>

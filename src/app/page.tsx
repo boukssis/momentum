@@ -55,7 +55,7 @@ export default async function HomePage() {
           <ServicesIndex items={previews} locale={locale} caption={t.servicesHome.illustrative} />
         </div>
       </section>
-      <Differentiator t={t} />
+      <Differentiator t={t} locale={locale} />
       <Interlude t={t} />
       <Leadership t={t} locale={locale} />
       <Approach

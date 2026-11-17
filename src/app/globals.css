@@ -150,6 +150,79 @@ html[lang="ar"] .hero-type {
   letter-spacing: 0;
 }
 
+.hero-slogan {
+  font-family: var(--font-editorial-family), Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(2.35rem, 8.4vw, 6.6rem);
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  text-wrap: nowrap;
+}
+
+html[lang="ar"] .hero-slogan {
+  font-family: var(--font-amiri-family), serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(2.2rem, 7vw, 5.1rem);
+  line-height: 1.28;
+  letter-spacing: 0;
+}
+
+.hero-slogan-line {
+  transform-origin: left center;
+}
+
+html[dir="rtl"] .hero-slogan-line {
+  transform-origin: right center;
+}
+
+.hero-slogan-word {
+  display: block;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-slogan-line {
+    animation: slogan-line 0.62s var(--ease) both;
+  }
+
+  .hero-slogan-word {
+    animation: slogan-word 0.78s var(--ease) both;
+  }
+
+  html[dir="rtl"] .hero-slogan-word {
+    animation-name: slogan-word-rtl;
+  }
+}
+
+@keyframes slogan-line {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes slogan-word {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes slogan-word-rtl {
+  from {
+    clip-path: inset(0 0 0 100%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
 .hero-stage {
   --px: 0;
   --py: 0;

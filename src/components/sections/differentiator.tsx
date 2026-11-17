@@ -1,8 +1,8 @@
 import { Reveal } from "@/components/reveal";
-import { VelocityCut } from "@/components/velocity-cut";
-import type { Dictionary } from "@/content/dictionary";
+import { PrincipleMark } from "@/components/sections/principle-mark";
+import type { Dictionary, Locale } from "@/content/dictionary";
 
-export function Differentiator({ t }: { t: Dictionary }) {
+export function Differentiator({ t, locale }: { t: Dictionary; locale: Locale }) {
   const copy = t.diff;
   return (
     <section className="bg-paper text-ink">
@@ -22,24 +22,9 @@ export function Differentiator({ t }: { t: Dictionary }) {
             <p className="self-end text-lg leading-relaxed text-ink/75 lg:col-span-4 lg:col-start-9">{copy.intro}</p>
           </div>
         </Reveal>
-        <ol className="mt-20 space-y-16 md:mt-28 md:space-y-24">
-          {copy.principles.map((principle, index) => (
-            <li key={principle.index}>
-              <Reveal>
-                <div className={index === 1 ? "lg:ps-[12vw]" : index === 2 ? "lg:ps-[5vw]" : ""}>
-                  <VelocityCut className={`h-3 ${index === 1 ? "w-40 text-orange md:w-64" : "w-24 text-ink"}`} />
-                  <div className="mt-6 grid items-end gap-4 lg:grid-cols-12">
-                    <h3 className="display tight text-[clamp(2rem,4vw,3.5rem)] leading-none lg:col-span-6">
-                      <span className="me-3 text-[0.42em]">{principle.index}</span>
-                      {principle.title}
-                    </h3>
-                    <p className="text-lg leading-relaxed text-ink/75 lg:col-span-5 lg:col-start-8">{principle.text}</p>
-                  </div>
-                </div>
-              </Reveal>
-            </li>
-          ))}
-        </ol>
+        <div className="mt-16 md:mt-24">
+          <PrincipleMark principles={copy.principles} rtl={locale === "ar"} />
+        </div>
       </div>
     </section>
   );
